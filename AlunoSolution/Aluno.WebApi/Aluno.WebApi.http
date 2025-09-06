@@ -1,0 +1,6 @@
+@Aluno.WebApi_HostAddress = http://localhost:5082
+
+GET {{Aluno.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
