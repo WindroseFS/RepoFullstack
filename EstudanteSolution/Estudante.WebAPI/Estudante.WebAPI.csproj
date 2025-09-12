@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.9" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Aluno.Dominio\Estudante.Dominio.csproj" />
-    <ProjectReference Include="..\Aluno.Servico\Estudante.Servico.csproj" />
+    <ProjectReference Include="..\Estudante.Dominio\Estudante.Dominio.csproj" />
+    <ProjectReference Include="..\Estudante.Servico\Estudante.Servico.csproj" />
   </ItemGroup>
 
 </Project>

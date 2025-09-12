@@ -11,8 +11,8 @@ namespace Estudante.Servico
     // Interface
     public interface IEstudanteServico
     {
-        void Adicionar(Dominio.Aluno aluno);
-        List<Dominio.Aluno> Listar();
+        void Adicionar(Dominio.EstudanteDominio aluno);
+        List<Dominio.EstudanteDominio> Listar();
     }
 
     // Implementação
@@ -25,7 +25,7 @@ namespace Estudante.Servico
             _repositorio = repositorio;
         }
 
-        public void Adicionar(Dominio.Aluno aluno)
+        public void Adicionar(Dominio.EstudanteDominio aluno)
         {
             if (string.IsNullOrWhiteSpace(aluno.Nome))
                 throw new Exception("O nome do aluno é obrigatório.");
@@ -33,7 +33,7 @@ namespace Estudante.Servico
             _repositorio.Adicionar(aluno);
         }
 
-        public List<Dominio.Aluno> Listar()
+        public List<Dominio.EstudanteDominio> Listar()
         {
             return _repositorio.Listar();
         }
